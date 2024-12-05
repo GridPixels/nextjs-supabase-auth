@@ -1,4 +1,3 @@
-import { signup } from "@/actions/auth";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 
@@ -31,10 +30,7 @@ export default function SignupPage() {
               <Label htmlFor="password">Password</Label>
               <Input type="password" placeholder="Password" name="password" />
             </div>
-            <button
-              className="w-full mt-5 bg-purple-600 text-white py-2 px-4 rounded-sm hover:bg-purple-700"
-              formAction={signup}
-            >
+            <button className="w-full mt-5 bg-purple-600 text-white py-2 px-4 rounded-sm hover:bg-purple-700">
               SignUp
             </button>
           </form>

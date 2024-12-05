@@ -1,9 +1,6 @@
-import { login, signup } from "@/actions/auth";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-
 import Link from "next/link";
-
 import {
   Card,
   CardContent,
@@ -31,16 +28,13 @@ export default function LoginPage() {
               <Label htmlFor="password">Password</Label>
               <Input type="password" placeholder="Password" name="password" />
             </div>
-            <button
-              className="w-full mt-5 bg-purple-600 text-white py-2 px-4 rounded-sm hover:bg-purple-700"
-              formAction={login}
-            >
+            <button className="w-full mt-5 bg-purple-600 text-white py-2 px-4 rounded-sm hover:bg-purple-700">
               SignUp
             </button>
           </form>
         </CardContent>
         <CardFooter>
-          <span className="text-gray-500 px-1">Don't have an account?</span>
+          <span className="text-gray-500 px-1">Don&#39;t have an account?</span>
 
           <Link
             href="/signup"
